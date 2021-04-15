@@ -130,7 +130,7 @@ variables:
     {{ (red|bitwise_and(248)*256) + (green|bitwise_and(252)*8) + (blue|bitwise_and(248)/8)|int }}
   text: '{{(now().strftime("%b "))~now().day}}'
   font: 8
-  ypos: "{{(haspbutton|int - 4) * 67 + 2}}" # calculate the top pixel position based on the selected button
+  ypos: "{{(haspbutton|int - 4) * 87 + 2}}" # calculate the top pixel position based on the selected button
   xpos: 0
   icon: ""
   iconwidth: 50
