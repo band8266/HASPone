@@ -1,5 +1,5 @@
 blueprint:
-  name: "HASP p[x].b[y] displays the current weather condition with icons"
+  name: "HASP 3.2 displays the current weather condition with icons"
   description: |
 
     # Description
@@ -133,7 +133,7 @@ variables:
     {%- else -%}
       6
     {%- endif -%}
-  ypos: "{{(haspbutton|int - 4) * 67 + 2}}"
+  ypos: "{{(haspbutton|int - 4) * 85 + 2}}"
   xpos: 0
   iconwidth: 65
   iconheight: 65
