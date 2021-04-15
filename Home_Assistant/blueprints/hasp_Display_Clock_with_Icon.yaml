@@ -209,7 +209,7 @@ action:
               payload: >-
                 ["{{haspobject}}.font={{font}}",
                 "{{haspobject}}.xcen=4",
-                "{{haspobject}}.ycen=1",
+                "{{haspobject}}.ycen=4",
                 "{{haspobject}}.pco={{selectedfg}}",
                 "{{haspobject}}.bco={{selectedbg}}",
                 "{{haspobject}}.pco2={{unselectedfg}}",
