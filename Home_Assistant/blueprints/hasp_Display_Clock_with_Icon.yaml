@@ -208,7 +208,7 @@ action:
               topic: "{{jsoncommandtopic}}"
               payload: >-
                 ["{{haspobject}}.font={{font}}",
-                "{{haspobject}}.xcen=2",
+                "{{haspobject}}.xcen=4",
                 "{{haspobject}}.ycen=1",
                 "{{haspobject}}.pco={{selectedfg}}",
                 "{{haspobject}}.bco={{selectedbg}}",
