@@ -1,5 +1,5 @@
 blueprint:
-  name: "HASP p[x].b[y] displays the month + date with a calendar icon"
+  name: "HASP 3.2 displays the month + date with a calendar icon"
   description: |
 
     # Description
