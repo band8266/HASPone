@@ -136,7 +136,7 @@ variables:
   ypos: "{{(haspbutton|int - 4) * 85 + 2}}"
   xpos: 0
   iconwidth: 65
-  iconheight: 65
+  iconheight: 85
   iconfont: 8
   xcen: 2
   ycen: 1
