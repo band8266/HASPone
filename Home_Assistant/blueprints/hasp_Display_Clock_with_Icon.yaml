@@ -141,7 +141,7 @@ variables:
   icon: ""
   iconwidth: 50
   iconheight: 85
-  iconfont: 9
+  iconfont: 8
 
 trigger_variables:
   haspdevice: !input haspdevice
