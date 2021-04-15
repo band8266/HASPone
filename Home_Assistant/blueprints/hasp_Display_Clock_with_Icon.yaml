@@ -1,5 +1,5 @@
 blueprint:
-  name: "HASP p[x].b[y] displays a clock with a clock icon"
+  name: "HASP 3.2 displays a clock with a clock icon"
   description: |
 
     # Description
