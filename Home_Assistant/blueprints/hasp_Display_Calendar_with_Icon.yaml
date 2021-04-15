@@ -134,7 +134,7 @@ variables:
   xpos: 0
   icon: ""
   iconwidth: 50
-  iconheight: 65
+  iconheight: 85
   iconfont: 8
 
 trigger_variables:
