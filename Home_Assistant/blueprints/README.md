@@ -106,16 +106,6 @@ Page 8 controls a selected media player with artist and track info, track back/p
 
 ---
 
-### Display Temperature with Icon and Colors
-
-[![Display Dimmer with Icon](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Display_Temperature_with_Icon_and_Colors.yaml)
-
-![Preview](https://raw.githubusercontent.com/HASwitchPlate/HASPone/main/images/hasp_Display_Temperature_with_Icon_and_Colors.png)
-
-A HASP button displays the current temperature on the right with a dynamic thermometer icon on the left and (optional) colors.
-
----
-
 ### Display Template
 
 [![Display Template](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Display_Template.yaml)
@@ -176,6 +166,26 @@ A HASP button displays an attribute of a selected weather forecast. You can use 
 
 ---
 
+### Display Weather Temperature with Colored Icon Only
+
+[![Display Weather Temperature with Colored Icon Only](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Display_Weather_Temperature_Color_Icon_Only.yaml)
+
+![Preview](https://raw.githubusercontent.com/HASwitchPlate/HASPone/main/images/hasp_Display_Weather_Temperature_Color_Icon_Only.png)
+
+A HASP button displays the current temperature as an icon that is optionally coloured.
+
+---
+
+### Display Weather Temperature with Icon and Colors
+
+[![Display Weather Temperature with Icon and Colors](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Display_Weather_Temperature_with_Icon_and_Colors.yaml)
+
+![Preview](https://raw.githubusercontent.com/HASwitchPlate/HASPone/main/images/hasp_Display_Weather_Temperature_with_Icon_and_Colors.png)
+
+A HASP button displays the current temperature from a selected weather provider on the right with a dynamic thermometer icon on the left and (optional) colors.
+
+---
+
 ### Perform Action
 
 [![Perform Action](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Perform_Action.yaml)
@@ -184,11 +194,39 @@ A button on the HASP will perform an action when pressed. Can be combined on a b
 
 ---
 
-### Remove MQTT Discovery Devices
+### Cycle Automations
 
-[![Remove MQTT Discovery Devices](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Remove_MQTT_Discovery_Devices.yaml)
+[![Cycle Automations](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Cycle_Automations.yaml)
 
-Press RUN ACTIONS to remove retained MQTT discovery messages for a decommissioned HASP.
+![Preview](https://raw.githubusercontent.com/HASwitchPlate/HASPone/main/images/hasp_Cycle_Automations.gif)
+
+A button on the HASP will toggle through as many as 10 selected automations.  This allows the user to assign multiple blueprints to the same button on the HASPone device, and to cycle between them by pressing the selected button.
+
+Optionally, a timeout can be set to cycle back to a "default" automation after a specified interval, or to continuously cycle through selected automations.
+
+---
+
+### Dim Screen with Sun
+
+[![Dim Screen with Sun](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Dim_Screen_with_Sun.yaml)
+
+Dim the HASPone backlight in response to the sun going up and down.
+
+---
+
+### Dim Screen on Idle
+
+[![Dim Screen on Idle](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Dim_Screen_on_Idle.yaml)
+
+Dim the screen backlight after a specified period of inactivity.
+
+---
+
+### Apply Theme
+
+[![Apply Theme](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Apply_Theme.yaml)
+
+A button on the HASP will have the current device theme or custom colors applied.
 
 ---
 
@@ -210,3 +248,10 @@ Press RUN ACTIONS to apply the theme Dark on Light to the selected HASP device
 
 Press RUN ACTIONS to apply the theme Light on Dark to the selected HASP device
 
+---
+
+### Remove MQTT Discovery Devices
+
+[![Remove MQTT Discovery Devices](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FHASwitchPlate%2FHASPone%2Fblob%2Fmain%2FHome_Assistant%2Fblueprints%2Fhasp_Remove_MQTT_Discovery_Devices.yaml)
+
+Press RUN ACTIONS to remove retained MQTT discovery messages for a decommissioned HASP.
