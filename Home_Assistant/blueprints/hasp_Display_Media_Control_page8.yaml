@@ -1,5 +1,5 @@
 blueprint:
-  name: "HASP p[8].b[all] Page 8 displays media controls"
+  name: "HASP 3.2 Page 8 displays media controls"
   description: |
 
     ## Blueprint Version: `1.03.00`
