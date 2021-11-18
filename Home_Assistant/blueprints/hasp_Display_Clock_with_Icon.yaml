@@ -143,7 +143,7 @@ variables:
   icon: ""
   iconwidth: 50
   iconheight: 85
-  iconfont: 8
+  iconfont: 10
 
 trigger_variables:
   haspdevice: !input haspdevice
@@ -210,8 +210,8 @@ action:
               topic: "{{jsoncommandtopic}}"
               payload: >-
                 ["{{haspobject}}.font={{font}}",
-                "{{haspobject}}.xcen=4",
-                "{{haspobject}}.ycen=4",
+                "{{haspobject}}.xcen=2",
+                "{{haspobject}}.ycen=1",
                 "{{haspobject}}.pco={{selectedfg}}",
                 "{{haspobject}}.bco={{selectedbg}}",
                 "{{haspobject}}.pco2={{unselectedfg}}",
