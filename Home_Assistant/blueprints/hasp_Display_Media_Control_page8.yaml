@@ -129,7 +129,7 @@ variables:
     {%- set blue=(state_attr(color.source, "rgb_color")[2] * brightness)|int(default=0) -%}
     {{ (red|bitwise_and(248)*256) + (green|bitwise_and(252)*8) + (blue|bitwise_and(248)/8)|int }}
 
-  volume: "{{(state_attr(mediaplayer, 'volume_level') | float(default=0) * 255)|int}}"
+  volume: "{{(state_attr(mediaplayer, 'volume_level') | float(default=0) * 400)|int}}"
   button4text: "{% if state_attr(mediaplayer, button4attribute) is none %}{% else %}{{state_attr(mediaplayer, button4attribute)|wordwrap(19, wrapstring='\\\\r')}}{% endif %}"
   button4font: "{% set attr_length = button4text|safe|length%}{% if attr_length <= 6 -%}9{% elif attr_length <= 8 %}8{% elif attr_length <= 10 %}7{% else %}6{%- endif %}"
   button5text: "{% if state_attr(mediaplayer, button5attribute) is none %}{% else %}{{state_attr(mediaplayer, button5attribute)|wordwrap(19, wrapstring='\\\\r')}}{% endif %}"
@@ -256,7 +256,7 @@ action:
                           - service: media_player.volume_set
                             entity_id: !input mediaplayer
                             data:
-                              volume_level: "{{trigger.payload_json.value/255}}"
+                              volume_level: "{{trigger.payload_json.value/400}}"
                       #########################################################################
                       # Previous track button was pressed
                       - conditions:
