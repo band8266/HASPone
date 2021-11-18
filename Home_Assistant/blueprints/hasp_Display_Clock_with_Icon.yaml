@@ -138,12 +138,12 @@ variables:
     {{ (red|bitwise_and(248)*256) + (green|bitwise_and(252)*8) + (blue|bitwise_and(248)/8)|int }}
   text: '{%- if hour24 == true -%}{%- set hourformat="%-H" -%}{%- else %}{%- set hourformat="%I" -%}{%- endif -%}{{(now().strftime(hourformat)|int)~now().strftime(":%M")}}'
   font: 10
-  ypos: "{{(haspbutton|int - 4) * 85 + 2}}" # calculate the top pixel position based on the selected button
+  ypos: "{{(haspbutton|int - 4) * 85 + 4}}" # calculate the top pixel position based on the selected button
   xpos: 0
   icon: ""
   iconwidth: 50
   iconheight: 85
-  iconfont: 10
+  iconfont: 8
 
 trigger_variables:
   haspdevice: !input haspdevice
