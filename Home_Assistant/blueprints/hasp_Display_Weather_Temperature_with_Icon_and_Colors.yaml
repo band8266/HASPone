@@ -1,5 +1,5 @@
 blueprint:
-  name: "HASP p[x].b[y] displays the current temperature from a weather provider with icon and colors"
+  name: "HASP 3.2 displays the current temperature from a weather provider with icon and colors"
   description: |
 
     ## Blueprint Version: `1.03.00`
@@ -242,7 +242,7 @@ variables:
   suffixstring: "{% if suffix_select != 'No suffix' %}{{ suffix_select }}{% endif %}"
   text: "{{temperature}}{{suffixstring}}"
   font: 10
-  ypos: "{{(haspbutton|int - 4) * 67 + 2}}"
+  ypos: "{{(haspbutton|int - 4) * 85 + 2}}"
   xpos: 0
   iconwidth: 40
   iconheight: 65
